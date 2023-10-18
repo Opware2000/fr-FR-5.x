@@ -407,7 +407,7 @@ INSERT INTO `#__extensions` (`package_id`, `name`, `type`, `element`, `folder`, 
 -- Templates
 INSERT INTO `#__extensions` (`package_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `locked`, `manifest_cache`, `params`, `custom_data`, `ordering`, `state`) VALUES
 (0, 'atum', 'template', 'atum', '', 1, 1, 1, 0, 1, '', '', '', 0, 0),
-(0, 'cassiopeia', 'template', 'cassiopeia', '', 0, 1, 1, 0, 1, '', '{"logoFile":"","fluidContainer":"0","sidebarLeftWidth":"3","sidebarRightWidth":"3"}', '', 0, 0);
+(0, 'cassiopeia', 'template', 'cassiopeia', '', 0, 1, 1, 0, 1, '', '{"brand":"1","logoFile":"","siteTitle":"","siteDescription":"","useFontScheme":"0","colorName":"colors_standard","fluidContainer":"0","stickyHeader":0,"backTop":0}', '', 0, 0);
 
 -- Files Extensions
 INSERT INTO `#__extensions` (`package_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `locked`, `manifest_cache`, `params`, `custom_data`, `ordering`, `state`) VALUES
@@ -943,14 +943,14 @@ CREATE TABLE IF NOT EXISTS `#__usergroups` (
 
 INSERT INTO `#__usergroups` (`id`, `parent_id`, `lft`, `rgt`, `title`) VALUES
 (1, 0, 1, 18, 'Public'),
-(2, 1, 8, 15, 'Registered'),
-(3, 2, 9, 14, 'Author'),
-(4, 3, 10, 13, 'Editor'),
-(5, 4, 11, 12, 'Publisher'),
-(6, 1, 4, 7, 'Manager'),
-(7, 6, 5, 6, 'Administrator'),
-(8, 1, 16, 17, 'Super Users'),
-(9, 1, 2, 3, 'Guest');
+(2, 1, 8, 15, 'Enregistré'),
+(3, 2, 9, 14, 'Auteur'),
+(4, 3, 10, 13, 'Rédacteur'),
+(5, 4, 11, 12, 'Validateur'),
+(6, 1, 4, 7, 'Gestionnaire'),
+(7, 6, 5, 6, 'Administrateur'),
+(8, 1, 16, 17, 'Super Utilisateur'),
+(9, 1, 2, 3, 'Invité');
 
 -- --------------------------------------------------------
 
