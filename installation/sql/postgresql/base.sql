@@ -598,7 +598,7 @@ CREATE TABLE IF NOT EXISTS "#__menu_types" (
 --
 
 INSERT INTO "#__menu_types" ("id", "asset_id", "menutype", "title", "description", "client_id", "ordering") VALUES
-(1, 0, 'mainmenu', 'Menu principal', 'Le menu principal du site', 0, 1);
+(1, 0, 'mainmenu', 'Main Menu', 'The main menu for the site', 0, 1);
 
 SELECT setval('#__menu_types_id_seq', 2, false);
 
